@@ -6,7 +6,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
 }
 
 .list-group{
@@ -14,6 +13,7 @@
     top: 15vh;
     right: 5vw;
     font-size: 1vw;
+    z-index: 2;
     
     .list-group-item{
         background-color: $primaryBackgroundColor;
@@ -31,9 +31,21 @@
 
 }
 
-.moving-type{
+.moving-type-container{
     position: absolute;
-    font-size: 9vh;
+    top:0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
     z-index: 0;
+    height: 105vh;
+
+}
+
+.moving-type{
+    position: relative;
+    font-size: 9vh;
     white-space: nowrap;
+    z-index: 0;
+    color: #444446;
 }

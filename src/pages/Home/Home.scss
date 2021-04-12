@@ -1,0 +1,10 @@
+@import "__colors";
+
+.home-container {
+    background-color: $primaryBackgroundColor;
+    height: 100vh;
+    color: $primaryTextColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

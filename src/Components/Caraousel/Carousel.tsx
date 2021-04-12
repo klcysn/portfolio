@@ -27,7 +27,6 @@ const Carousel = () => {
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active" data-bs-interval="1000">
-                    {/* <img src={null} className="d-block" alt={null} /> */}
                     <p className="carousel-start">My Skills</p>
                 </div>
                {imageList.map((item, i)=>{
@@ -39,14 +38,6 @@ const Carousel = () => {
                }) 
                 }
             </div>
-            {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-            </button> */}
             {imageList.map((item, i)=> <img key={i} style={{transform: `rotate(${i*20}deg) translate(19vw) rotate(${-i*20}deg)`}} className="circle-item" src={item.src} alt={item.alt} />
             )}
         </div>

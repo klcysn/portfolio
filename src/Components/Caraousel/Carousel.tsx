@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Carousel.scss"
 
 const imageList = [
@@ -23,6 +23,19 @@ const imageList = [
 ]
 
 const Carousel = () => {
+
+    const [index, setIndex] = useState(0)
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            if(index === imageList.length - 1){
+                setIndex(0)
+            }else{
+                setIndex(index + 1)
+            }
+        }, 1000)
+    }, [index])
+
     return (
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
@@ -38,7 +51,13 @@ const Carousel = () => {
                }) 
                 }
             </div>
-            {imageList.map((item, i)=> <img key={i} style={{transform: `rotate(${i*20}deg) translate(19vw) rotate(${-i*20}deg)`}} className="circle-item" src={item.src} alt={item.alt} />
+            {imageList.map((item, i)=> {
+            return(
+                <img key={i}
+            style={{transform: `rotate(${i*20}deg) translate(20vw) rotate(${-i*20}deg)`,
+            boxShadow: i === index ? "0px 0px 5px 5px" : "none"}} className="circle-item" src={item.src} alt={item.alt} />
+            )
+            }
             )}
         </div>
     )

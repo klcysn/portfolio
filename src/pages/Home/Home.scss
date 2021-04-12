@@ -2,9 +2,29 @@
 
 .home-container {
     background-color: $primaryBackgroundColor;
-    height: 100vh;
     color: $primaryTextColor;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.list-group{
+    position: fixed;
+    top: 15vh;
+    right: 5vw;
+    font-size: 1vw;
+    
+    .list-group-item{
+        background-color: $primaryBackgroundColor;
+        color: $primaryTextColor;
+        &:hover{
+            color: white
+        }
+    }
+    .fas{
+        color: $primaryTextColor;
+        &:hover{
+            color: white
+        }
+    }
 }

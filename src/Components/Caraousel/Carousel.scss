@@ -1,6 +1,6 @@
 .carousel{
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 25vh;
     margin-bottom: 20vh;
     width: 30vw;
     height: 30vw;
@@ -8,6 +8,8 @@
     background-color: #212529;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 5;
 }
 
 .carousel-item{

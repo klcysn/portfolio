@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .list-group{
@@ -27,4 +28,12 @@
             color: white
         }
     }
+
+}
+
+.moving-type{
+    position: absolute;
+    font-size: 9vh;
+    z-index: 0;
+    white-space: nowrap;
 }

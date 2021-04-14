@@ -16,7 +16,8 @@
     z-index: 2;
     
     .list-group-item{
-        background-color: $primaryBackgroundColor;
+        background-color: rgba(0,0,0,0);
+        border: none;
         color: $primaryTextColor;
         &:hover{
             color: white
@@ -44,7 +45,7 @@
 
 .moving-type{
     position: relative;
-    font-size: 9vh;
+    font-size: 5vw;
     white-space: nowrap;
     z-index: 0;
     color: #444446;

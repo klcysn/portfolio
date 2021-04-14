@@ -1,0 +1,37 @@
+@import "../../pages/Home/__colors";
+
+.skills-container{
+    margin: 0;
+    position: relative;
+    a{
+        display: inline-block;
+        width: 45%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.page-header{
+    margin-bottom: 2vh;
+    width: 100%;
+    color: $primaryBackgroundColor;
+}
+
+.card{
+    width: 32vw;
+    height: 32vw;
+    // border-radius: 16vw;
+    cursor: pointer;
+    background-color: $primaryBackgroundColor;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .card-title{
+        position: absolute;
+        bottom: 1vh;
+        left: 1vw;
+    }
+}

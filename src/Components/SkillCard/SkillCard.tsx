@@ -1,9 +1,20 @@
 import React from 'react'
 import "./SkillCard.scss"
+import Tilt from "react-parallax-tilt";
 
 
 const SkillCard: React.FC<any> = ({item, width}) => {
-    return (  
+    return ( 
+        <Tilt
+        className="parallax-effect-img tilt"
+        tiltMaxAngleX={-45}
+        tiltMaxAngleY={-45}
+        perspective={900}
+        scale={1}
+        transitionSpeed={1500}
+        gyroscope={true}
+        glareColor={"rgba(0,0,0,0)"}
+        > 
         <div className="col-4">
                 <div className="card">
                 <a href={item.link} target="_blank" rel="noreferrer">
@@ -12,6 +23,7 @@ const SkillCard: React.FC<any> = ({item, width}) => {
                 </a>
                 </div>
             </div>
+        </Tilt>
     )
 }
 

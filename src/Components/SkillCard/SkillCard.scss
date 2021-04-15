@@ -3,6 +3,8 @@
 .skills-container{
     margin: 0;
     position: relative;
+    display: flex;
+    justify-content: center;
     a{
         display: inline-block;
         width: 100%;
@@ -20,7 +22,7 @@
 .card{
     width: 32vw;
     height: 32vw;
-    // border-radius: 16vw;
+    border-radius: 4vw;
     cursor: pointer;
     background-color: $primaryBackgroundColor;
     position: relative;
@@ -28,17 +30,15 @@
     justify-content: center;
     align-items: center;
     box-shadow: 5px 5px 5px 5px $primaryBackgroundColor;
-    transition: ease-in-out all 1s;
-
-    &:hover{
-        transform: rotateX(15deg) rotateY(-20deg);
-        transform-style: preserve-3d;
-    }
-
 
     .card-title{
         position: absolute;
         bottom: 1vh;
         left: 1vw;
     }
+}
+
+.tilt{
+    width:35%;
+    
 }

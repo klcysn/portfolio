@@ -13,13 +13,13 @@ const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a className="navbar-brand" href="#">Portfolio Page</a>
+            <a className="navbar-brand" href="/">Portfolio Page</a>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">Home</a>
+                <a className="nav-link" aria-current="page" href="/">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Link</a>
+                <img src="https://counter11.stat.ovh/private/freecounterstat.php?c=unhgx5kjnkr9qlx9l6ammqnt26hd2ql4" alt="Visitor Counter"/>
               </li>
             </ul>
           </div>

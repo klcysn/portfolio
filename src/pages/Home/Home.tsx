@@ -14,10 +14,10 @@ const Home = () => {
     return (
         <div className="home-container">
             <div id="list-example" className="list-group">
-                <a className="list-group-item list-group-item-action" href="#Main"><i className="fas fa-circle"></i></a>
-                <a className="list-group-item list-group-item-action" href="#Mobil"><i className="fas fa-circle"></i></a>
-                <a className="list-group-item list-group-item-action" href="#Frontend"><i className="fas fa-circle"></i></a>
-                <a className="list-group-item list-group-item-action" href="#end"><i className="fas fa-circle"></i></a>
+                <a className="list-group-item list-group-item-action" href="#Main"><i className="fas fa-circle"></i> Main</a>
+                <a className="list-group-item list-group-item-action" href="#Mobil"><i className="fas fa-circle"></i> Mobil</a>
+                <a className="list-group-item list-group-item-action" href="#Frontend"><i className="fas fa-circle"></i> Frontend</a>
+                <a className="list-group-item list-group-item-action" href="#end"><i className="fas fa-circle"></i> Backend</a>
             </div>
             <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset={0} className="scrollspy-example" tabIndex={0}>
                 <h1  id="Main"></h1>

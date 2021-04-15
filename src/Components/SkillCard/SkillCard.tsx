@@ -3,7 +3,6 @@ import "./SkillCard.scss"
 
 
 const SkillCard: React.FC<any> = ({item, width}) => {
-    console.log(item)
     return (  
         <a href={item.link} target="_blank" rel="noreferrer">
             <div className="col-4">

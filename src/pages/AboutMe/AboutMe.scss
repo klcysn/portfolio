@@ -1,0 +1,29 @@
+@import "../Home/__colors";
+
+.me-container{
+    height: 100vh;
+    background-color: $primaryBackgroundColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container{
+    width: 65%;
+    height: 5.5vh;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    transition: ease-in-out all 2s;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.text{
+    line-height: 3rem;
+    color: white;
+    transition: ease-in-out 2s all;
+    text-align: center;
+}

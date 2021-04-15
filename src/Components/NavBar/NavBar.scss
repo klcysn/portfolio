@@ -1,8 +1,29 @@
 .navbar{
     position: relative;
     z-index: 10;
+   
 }
 
 .nav-item{
     margin-left: 1vw;
+}
+.navbar-nav{
+    width: 100%;
+}
+
+.counter{
+    position: absolute;
+    top: 0.5vh;
+    right: 2vw;
+}
+
+.nav-link, .navbar-brand{
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px){
+    .counter{
+        display: none;
+    }
 }

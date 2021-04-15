@@ -1,7 +1,10 @@
 import React from 'react'
 import "./NavBar.scss"
+import {useHistory} from "react-router-dom"
 
 const NavBar = () => {
+  const history = useHistory()
+  const handleRoute = (event:React.MouseEvent<HTMLAnchorElement>) => history.push(event.currentTarget.id)
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
@@ -13,16 +16,17 @@ const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a className="navbar-brand" href="/">Portfolio Page</a>
+            <a className="navbar-brand" id="/" onClick={handleRoute}>Portfolio Page</a>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/">Home</a>
+                <a className="nav-link" id="/" onClick={handleRoute} aria-current="page">Home</a>
               </li>
               <li className="nav-item">
-                <img src="https://counter11.stat.ovh/private/freecounterstat.php?c=unhgx5kjnkr9qlx9l6ammqnt26hd2ql4" alt="Visitor Counter"/>
+                <a className="nav-link" id="/about" onClick={handleRoute} aria-current="page" >About Me</a>
               </li>
             </ul>
           </div>
+            <img src="https://counter11.stat.ovh/private/freecounterstat.php?c=unhgx5kjnkr9qlx9l6ammqnt26hd2ql4" className="counter" alt="Visitor Counter"/>
         </div>
       </nav>
     );

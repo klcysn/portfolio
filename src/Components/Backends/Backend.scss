@@ -1,6 +1,6 @@
 .backend-container{
     width: 100%;
-    background-color: #073b4c;
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
     position: relative;
     height: 100vh;
     display: flex;
@@ -31,6 +31,7 @@
     position: absolute;
     top: 1vh;
     left:1vw;
+    color: #222222
 }
 
 .middle-header{

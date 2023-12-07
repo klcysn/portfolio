@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./Carousel.scss"
 
 const imageList = [
+    {src: "https://easydmarc.com/blog/wp-content/uploads/2021/11/Salesforce-Logo.png", alt: "Salesforce"},
     {src: "https://areknawo.com/content/images/2019/02/68747470733a2f2f64323169693931693379366f36682e636c6f756466726f6e742e6e65742f67616c6c6572795f696d616765732f66726f6d5f70726f6f662f31303037342f6c617267652f313435353731343038312f747970657363726970742e706e67.png", alt: "Typescript"},
     {src: "https://softwarehut.b-cdn.net/wp-content/uploads/2020/03/what-is-react-native.png", alt: "React Native"},
     {src: "https://sandstorm.de/_Resources/Persistent/3/2/8/5/3285416e8503b2c8354c321bcd690cf550b8b2d3/React-Logo.svg", alt: "React"},
